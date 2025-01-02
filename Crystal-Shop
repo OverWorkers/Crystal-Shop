@@ -1,6 +1,6 @@
 using System;
 
-namespace CrystalShop
+namespace Crystal_Shop
 {
     internal class Program
     {
