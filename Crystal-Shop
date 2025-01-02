@@ -1,0 +1,27 @@
+using System;
+
+namespace CrystalShop
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            const int crystalPrice = 22;
+
+            Console.WriteLine("Легенда гласит, что где то там, или тут есть магазин кристалов!");
+            Console.WriteLine($"Цена одного кристалла: {crystalPrice} золота. Мама дорогая, а чё так мало?");
+
+            Console.Write("Введите ваше начальное количество золота, чем больше тем лучше: ");
+            int gold = int.Parse(Console.ReadLine());
+
+            Console.Write("Сколько кристаллов вы хотите купить? ");
+            int crystalsToBuy = int.Parse(Console.ReadLine());
+
+            int totalPrice = crystalsToBuy * crystalPrice;
+            gold -= totalPrice;
+
+            Console.WriteLine($"Вы купили {crystalsToBuy} кристаллов за {totalPrice} золота.");
+            Console.WriteLine($"У вас осталось {gold} золота.");
+        }
+    }
+}
