@@ -6,7 +6,7 @@ namespace Crystal_Shop
     {
         static void Main(string[] args)
         {
-            const int CrystalPrice = 22;
+            const int CrystalPrice = 10;
 
             Console.WriteLine("Легенда гласит, что где то там, или тут есть магазин кристалов!");
             Console.WriteLine($"Цена одного кристалла: {CrystalPrice} золота. Мама дорогая, а чё так мало?");
